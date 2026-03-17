@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Lebaran Yaa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            /* Background Tema Ramadhan */
+            background-color: #1e5631; 
+            background-image: 
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2327ae60' fill-opacity='0.2'%3E%3Cpath d='M0 0h80v80H0V0zm40 12.12L12.12 40 40 67.88 67.88 40 40 12.12zM12.12 12.12H28v15.88L12.12 12.12zm40 0h15.88l-15.88 15.88V12.12zM12.12 52.12l15.88 15.88H12.12V52.12zm40 15.88l15.88-15.88v15.88H52.12z'/%3E%3C/g%3E%3C/svg%3E"),
+                radial-gradient(circle at center, #2ecc71 0%, #1e5631 100%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95); 
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            border: 2px solid #27ae60;
+            /* Animasi Masuk */
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .ucapan-header {
+            color: #1e5631;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .foto-container {
+            margin-bottom: 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .foto-orang {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ucapan-teks {
+            color: #2c3e50;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .tombol-lanjut {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 12px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tombol-lanjut:hover {
+            background-color: #1e5631;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="ucapan-header">Selamat Idul Fitri!</h1>
+
+        <div class="foto-container">
+            <img src="jangwonyoung.jpg" alt="Foto Ucapan Lebaran" class="foto-orang">
+        </div>
+
+        <div class="ucapan-teks">
+            <p><strong>Taqabbalallahu Minna Wa Minkum.</strong></p>
+            <p>Minal Aidin Wal Faizin<br>Mohon Maaf Lahir dan Batin<br>maaf yaa kalo aku sering buat salah sama kamu</p>
+            <p>Semoga kebahagiaan selalu menyertai kita di hari yang suci ini.</p>
+        </div>
+
+        <a href="halaman2.html" class="tombol-lanjut">Lanjut</a>
+    </div>
+
+</body>
+</html>

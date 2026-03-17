@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momen Berharga</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff5f8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(255, 182, 193, 0.4);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            /* Animasi Masuk Halaman */
+            animation: slideUp 1.2s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: #d81b60;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .photo-box {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            border: 4px solid #ffccd5;
+            transition: all 0.4s ease;
+            opacity: 0;
+            animation: slideUp 0.8s ease-out forwards;
+        }
+
+        /* Border Bulat Lucu (Blob) Berbeda Tiap Foto */
+        .photo-box:nth-child(1) { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; animation-delay: 0.3s; }
+        .photo-box:nth-child(2) { border-radius: 40% 60% 70% 30% / 40% 70% 30% 60%; animation-delay: 0.5s; }
+        .photo-box:nth-child(3) { border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%; animation-delay: 0.7s; }
+        .photo-box:nth-child(4) { border-radius: 30% 70% 60% 40% / 70% 40% 60% 30%; animation-delay: 0.9s; }
+
+        .photo-box:hover {
+            transform: scale(1.05) rotate(3deg);
+            border-color: #ff4d6d;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message-box {
+            background-color: #fff0f3;
+            padding: 20px;
+            border-radius: 15px;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            border-left: 5px solid #ff4d6d;
+        }
+
+        /* TOMBOL KEMBALI KE HALAMAN PERTAMA */
+        .btn-kembali {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #ff4d6d;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-kembali:hover {
+            background-color: #c9184a;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(255, 77, 109, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Jang Wonyoung</h2>
+
+        <div class="photo-grid">
+            <div class="photo-box"><img src="foto1.png" alt="Moments 1"></div>
+            <div class="photo-box"><img src="foto2.png" alt="Moments 2"></div>
+            <div class="photo-box"><img src="foto3.jpeg" alt="Moments 3"></div>
+            <div class="photo-box"><img src="foto4.jpeg" alt="Moments 4"></div>
+        </div>
+
+        <div class="message-box">
+            <p>Terima kasih ya sudah selalu ada di setiap langkahku. <br> 
+            Melihat foto-foto ini mengingatkanku betapa beruntungnya aku memilikimu.</p>
+            <p><b>Semoga bahagia selalu menyertai kita! ❤️</b></p>
+        </div>
+
+        <a href="selamat lebaran.html" class="btn-kembali">Kembali ke Halaman Pertama</a>
+    </div>
+
+</body>
+</html>
